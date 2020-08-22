@@ -106,9 +106,9 @@ class BlackjackGameTest {
 
     private val betMoneyMap: BetMoneyMap = BetMoneyMap(
         mapOf(
-            "ace" to BetMoney.of("1000")!!,
-            "hi" to BetMoney.of("2000")!!,
-            "con" to BetMoney.of("3000")!!
+            "ace" to BetMoney.from("1000")!!,
+            "hi" to BetMoney.from("2000")!!,
+            "con" to BetMoney.from("3000")!!
         )
     )
 

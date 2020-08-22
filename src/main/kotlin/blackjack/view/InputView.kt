@@ -35,7 +35,7 @@ object InputView {
 
     private fun getBetMoney(playerName: String): BetMoney {
         println("${playerName}의 배팅 금액은? ($MIN_MONEY ~ $MAX_MONEY 사이의 금액을 입력해주세요.)")
-        val betMoney: BetMoney? = BetMoney.of(readLine()!!)
+        val betMoney: BetMoney? = BetMoney.from(readLine()!!)
         return betMoney ?: getBetMoney(playerName)
     }
 
